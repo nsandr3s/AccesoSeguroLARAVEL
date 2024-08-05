@@ -16,6 +16,21 @@ Este proyecto es una aplicación web que permite la autenticación de usuarios, 
 1. **Clona el repositorio**:
    ```bash
    git clone https://github.com/nsandr3s/AccesoSeguroLARAVEL.git
-2. **Navega a la carpeta del proyecto:**:
+2. **Navega a la carpeta del proyecto**:
    ```bash
    cd AccesoSeguroLARAVEL
+3. **Copia el archivo de configuración del entorno**:
+   ```bash
+   cp .env.example .env
+4. **Instala las dependencias del proyecto**:
+   ```bash
+    composer install
+5. **Genera la clave de aplicación**:
+   ```bash
+    php artisan key:generate
+6. **Ejecuta las migraciones para configurar la base de datos (si es necesario)**:
+   ```bash
+    php artisan migrate
+7. **Inicia el servidor de desarrollo**:
+   ```bash
+    php artisan serve
